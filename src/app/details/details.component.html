@@ -1,0 +1,5 @@
+<button (click)="toggleDetails()">Display Details</button>
+<p *ngIf="displayParagraph">The details are very, vewry ,very, very secret :)</p>
+<div>
+  <span [ngClass]="{white: c > 4}" [ngStyle]="{backgroundColor: getBackground(c)}"*ngFor="let c of clicks">{{c+' '}}</span>
+</div>
